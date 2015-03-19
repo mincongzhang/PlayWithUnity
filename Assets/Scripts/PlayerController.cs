@@ -12,6 +12,5 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3 (move_horizontal, 0.0f, move_vertical);
 
 		rigidbody.AddForce (movement * speed * Time.deltaTime);
-		//http://unity3d.com/learn/tutorials/projects/roll-a-ball/moving-the-player
 	}
 }

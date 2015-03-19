@@ -20,5 +20,3 @@ public class CameraController : MonoBehaviour {
 		transform.position = player1.transform.position + offset;
 	}
 }
-
-//http://unity3d.com/learn/tutorials/projects/roll-a-ball/pickup-objects

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Rotator : MonoBehaviour {
@@ -8,4 +8,3 @@ public class Rotator : MonoBehaviour {
 		transform.Rotate (new Vector3 (15, 30, 45) * Time.deltaTime);
 	}
 }
-//http://unity3d.com/learn/tutorials/projects/roll-a-ball/collecting-and-counting

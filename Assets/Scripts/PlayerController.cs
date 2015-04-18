@@ -28,7 +28,16 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 			m_count++;
 			SetCountText ();
-			//Debug.Log(count);
+		}
+
+		if (other.gameObject.tag == "CeilTrigger") {
+			other.gameObject.SetActive(false);
+			GameObject.Find("Ceil").GetComponent<CeilController>().m_move = true;
+		}
+
+		if (other.gameObject.tag == "FloorTrigger") {
+			other.gameObject.SetActive(false);
+			GameObject.Find("NorthFloor").SetActive(false);
 		}
 	}
 
